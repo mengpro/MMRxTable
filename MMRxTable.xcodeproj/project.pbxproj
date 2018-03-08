@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00FE7EE3205103D4001385A1 /* AudioDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FE7EE2205103D4001385A1 /* AudioDelegate.swift */; };
+		00FE7EE5205103F8001385A1 /* AudioFilesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FE7EE4205103F8001385A1 /* AudioFilesManager.swift */; };
+		00FE7EE720510413001385A1 /* AudioPlayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FE7EE620510413001385A1 /* AudioPlayManager.swift */; };
+		00FE7EE920510558001385A1 /* AudioRecordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FE7EE820510558001385A1 /* AudioRecordManager.swift */; };
+		00FE7EEB20510701001385A1 /* NotificationCenter+TSBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FE7EEA20510701001385A1 /* NotificationCenter+TSBlock.swift */; };
+		00FE7EED20510730001385A1 /* TSGlobalHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FE7EEC20510730001385A1 /* TSGlobalHelper.swift */; };
+		00FE7EEF20510778001385A1 /* TSLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FE7EEE20510778001385A1 /* TSLogger.swift */; };
 		1F6DFC8449B7308F67D12935 /* Pods_MMRxTable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57404E31F6739C07D271C7A3 /* Pods_MMRxTable.framework */; };
 		EA4E12772045442F00799E94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4E12762045442F00799E94 /* AppDelegate.swift */; };
 		EA4E12792045442F00799E94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4E12782045442F00799E94 /* ViewController.swift */; };
@@ -28,6 +35,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00FE7EE2205103D4001385A1 /* AudioDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioDelegate.swift; sourceTree = "<group>"; };
+		00FE7EE4205103F8001385A1 /* AudioFilesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioFilesManager.swift; sourceTree = "<group>"; };
+		00FE7EE620510413001385A1 /* AudioPlayManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayManager.swift; sourceTree = "<group>"; };
+		00FE7EE820510558001385A1 /* AudioRecordManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecordManager.swift; sourceTree = "<group>"; };
+		00FE7EEA20510701001385A1 /* NotificationCenter+TSBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NotificationCenter+TSBlock.swift"; sourceTree = "<group>"; };
+		00FE7EEC20510730001385A1 /* TSGlobalHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSGlobalHelper.swift; sourceTree = "<group>"; };
+		00FE7EEE20510778001385A1 /* TSLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSLogger.swift; sourceTree = "<group>"; };
 		4B52FE665E218C7D68FF5F65 /* Pods-MMRxTable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMRxTable.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MMRxTable/Pods-MMRxTable.debug.xcconfig"; sourceTree = "<group>"; };
 		57404E31F6739C07D271C7A3 /* Pods_MMRxTable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MMRxTable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		693ADC544E4365073505E725 /* Pods-MMRxTable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMRxTable.release.xcconfig"; path = "Pods/Target Support Files/Pods-MMRxTable/Pods-MMRxTable.release.xcconfig"; sourceTree = "<group>"; };
@@ -64,6 +78,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00FE7EE1205103C9001385A1 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				00FE7EE2205103D4001385A1 /* AudioDelegate.swift */,
+				00FE7EE4205103F8001385A1 /* AudioFilesManager.swift */,
+				00FE7EE620510413001385A1 /* AudioPlayManager.swift */,
+				00FE7EE820510558001385A1 /* AudioRecordManager.swift */,
+				00FE7EEA20510701001385A1 /* NotificationCenter+TSBlock.swift */,
+				00FE7EEC20510730001385A1 /* TSGlobalHelper.swift */,
+				00FE7EEE20510778001385A1 /* TSLogger.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		ACE66BEB086652449F372391 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,9 +130,9 @@
 		EA4E12752045442F00799E94 /* MMRxTable */ = {
 			isa = PBXGroup;
 			children = (
+				00FE7EE1205103C9001385A1 /* Helper */,
 				EA4E12912045497300799E94 /* ViewModel */,
 				EA4E12902045496100799E94 /* View */,
-				EA4E128F2045495A00799E94 /* Protocol */,
 				EA4E128E2045495500799E94 /* Model */,
 				EA4E128D2045494F00799E94 /* Extension */,
 				EA4E128C2045494400799E94 /* Controller */,
@@ -142,13 +170,6 @@
 				EAC1E3F7204FEDAE00FE87F8 /* AudioModel.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		EA4E128F2045495A00799E94 /* Protocol */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Protocol;
 			sourceTree = "<group>";
 		};
 		EA4E12902045496100799E94 /* View */ = {
@@ -255,6 +276,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjcExceptionBridging/ObjcExceptionBridging.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
@@ -263,13 +285,17 @@
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/TSVoiceConverter/TSVoiceConverter.framework",
 				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
+				"${BUILT_PRODUCTS_DIR}/TimedSilver/TimedSilver.framework",
+				"${BUILT_PRODUCTS_DIR}/XCGLogger/XCGLogger.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjcExceptionBridging.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
@@ -278,7 +304,10 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TSVoiceConverter.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TimedSilver.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCGLogger.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -325,10 +354,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00FE7EE5205103F8001385A1 /* AudioFilesManager.swift in Sources */,
 				EA4E12932045729500799E94 /* MMNetwork.swift in Sources */,
 				EA4E12892045472200799E94 /* TableViewCell.swift in Sources */,
+				00FE7EED20510730001385A1 /* TSGlobalHelper.swift in Sources */,
+				00FE7EEF20510778001385A1 /* TSLogger.swift in Sources */,
 				EAC1E3F8204FEDAE00FE87F8 /* AudioModel.swift in Sources */,
+				00FE7EE3205103D4001385A1 /* AudioDelegate.swift in Sources */,
 				EA4E129920457D5500799E94 /* UserViewModel.swift in Sources */,
+				00FE7EEB20510701001385A1 /* NotificationCenter+TSBlock.swift in Sources */,
 				EAC1E3F2204FE48700FE87F8 /* AudioCellDelegate.swift in Sources */,
 				EAC1E3F5204FE84A00FE87F8 /* AudioCell.swift in Sources */,
 				EAC1E3EE204FD2EF00FE87F8 /* UIColor+Extension.swift in Sources */,
@@ -336,7 +370,9 @@
 				EA4E129720457CB600799E94 /* UserModel.swift in Sources */,
 				EAC1E3EA204FC2E100FE87F8 /* AudioIndicatorView.swift in Sources */,
 				EA4E12792045442F00799E94 /* ViewController.swift in Sources */,
+				00FE7EE720510413001385A1 /* AudioPlayManager.swift in Sources */,
 				EA4E12772045442F00799E94 /* AppDelegate.swift in Sources */,
+				00FE7EE920510558001385A1 /* AudioRecordManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,6 +516,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mengpro.MMRxTable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ENFORCE_EXCLUSIVE_ACCESS = none;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -496,6 +533,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mengpro.MMRxTable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ENFORCE_EXCLUSIVE_ACCESS = none;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

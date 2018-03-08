@@ -54,21 +54,7 @@ extension AudioIndicatorView {
     }
     
     func volumeDidChanged(_ value: CGFloat) {
-        var index = Int(round(value))
-        index = index > 7 ? 7 : index
-        index = index < 0 ? 0 : index
         
-        let array = [
-            UIImage(named: "RecordingSignal001"),
-            UIImage(named: "RecordingSignal002"),
-            UIImage(named: "RecordingSignal003"),
-            UIImage(named: "RecordingSignal004"),
-            UIImage(named: "RecordingSignal005"),
-            UIImage(named: "RecordingSignal006"),
-            UIImage(named: "RecordingSignal007"),
-            UIImage(named: "RecordingSignal008")
-        ]
-        self.volumeImageView.image = array[index]
     }
     
     func slideToCancelRecord() {
@@ -95,6 +81,24 @@ extension AudioIndicatorView {
     
     func endRecord() {
         self.isHidden = true
+    }
+    
+    func updateMetersValue(_ value: Float) {
+        var index = Int(round(value))
+        index = index > 7 ? 7 : index
+        index = index < 0 ? 0 : index
+        
+        let array = [
+            UIImage(named: "RecordingSignal001"),
+            UIImage(named: "RecordingSignal002"),
+            UIImage(named: "RecordingSignal003"),
+            UIImage(named: "RecordingSignal004"),
+            UIImage(named: "RecordingSignal005"),
+            UIImage(named: "RecordingSignal006"),
+            UIImage(named: "RecordingSignal007"),
+            UIImage(named: "RecordingSignal008")
+        ]
+        self.volumeImageView.image = array[index]
     }
     
 }
